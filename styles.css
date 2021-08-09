@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+:root{
+    --primary-color:#D1D5DB;
+    --purple:#6C63FF;
+}
+
+body{
+    font-family: 'Tangerine', cursive;
+    font-size: 21pt;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--primary-color) ;
+}
+
+
+
+.hero-image{
+    width: 350px;
+    height: 350px;
+    margin-top: -85px;
+    margin-bottom: -80px;
+}
+
+
+#output-box{
+    width: 50%;
+    background-color: white;
+    height: 12vh;
+    display: block;
+    margin: auto;
+    margin-top: -10px;
+    border:1px black none;
+    box-shadow: 2px 2px 3px var(--purple);
+    padding: 3px;
+}
+
+#txt-input{
+    width: 50%;
+    display: block;
+    margin: auto;
+    height: 12vh;
+    resize: none;
+    font-family:'Tangerine';
+    font-size: 24pt;
+    padding: 3px;
+    box-shadow: 2px 2px 3px var(--purple);
+
+}
+
+#button{
+    display: block;
+    text-align: center;
+    margin:auto;
+    margin-top: 17px;
+    margin-bottom: -20px;
+    background-color: var(--purple);
+    border-radius: 15% 15% 15% 15%;
+    color: var(--primary-color);
+    width: 7rem;
+    height: 2rem;
+    border: 2px black groove;
+    padding: 1px;
+    font-family: 'Tangerine', cursive;
+    font-size: larger;
+}
+
+#Translator-message{
+    margin-top: -7px;
+
+}
+#look-message{
+    margin-bottom: -1px;
+}
+
