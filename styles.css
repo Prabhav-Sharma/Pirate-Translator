@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
+
+
 :root{
     --primary-color:#D1D5DB;
     --purple:#6C63FF;
@@ -33,6 +35,7 @@ body{
     border:1px black none;
     box-shadow: 2px 2px 3px var(--purple);
     padding: 3px;
+    font-size: 24pt;
 }
 
 #txt-input{
