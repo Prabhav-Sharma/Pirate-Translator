@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+
 
 
 :root{
     --primary-color:#D1D5DB;
     --purple:#6C63FF;
+    --green: #10B981
 }
 
 body{
@@ -17,11 +20,12 @@ body{
 
 
 
+
 .hero-image{
-    width: 350px;
-    height: 350px;
-    margin-top: -85px;
-    margin-bottom: -80px;
+    width: 300px;
+    height: 300px;
+    margin-top: -75px;
+    margin-bottom: -50px;
 }
 
 
@@ -33,9 +37,10 @@ body{
     margin: auto;
     margin-top: -10px;
     border:1px black none;
-    box-shadow: 2px 2px 3px var(--purple);
+    box-shadow: 2px 2px 3px var(--green);
     padding: 3px;
-    font-size: 24pt;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18pt;
 }
 
 #txt-input{
@@ -44,10 +49,12 @@ body{
     margin: auto;
     height: 12vh;
     resize: none;
-    font-family:'Tangerine';
-    font-size: 24pt;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18pt;
     padding: 3px;
-    box-shadow: 2px 2px 3px var(--purple);
+    text-align: center;
+    box-shadow: 2px 2px 3px var(--green);
+    margin-top: 20px;
 
 }
 
@@ -64,8 +71,8 @@ body{
     height: 2rem;
     border: 2px black groove;
     padding: 1px;
-    font-family: 'Tangerine', cursive;
-    font-size: larger;
+    font-family: 'PT Sans', sans-serif;
+    font-size: large;
 }
 
 #Translator-message{
@@ -74,5 +81,9 @@ body{
 }
 #look-message{
     margin-bottom: -1px;
+}
+
+#button:hover{
+    box-shadow: 0px 0px 8px var(--green);
 }
 
