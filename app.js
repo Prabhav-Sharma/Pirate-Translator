@@ -1,21 +1,18 @@
-var button= document.querySelector("#button");
-var txtInput= document.querySelector("#txt-input");
-var outputBox= document.querySelector("#output-box");
+//ES6 Code Version
+const button= document.querySelector("#button");
+const txtInput= document.querySelector("#txt-input");
+const outputBox= document.querySelector("#output-box");
 
 
-var serverUrl="https://api.funtranslations.com/translate/pirate.json";
+const serverUrl="https://api.funtranslations.com/translate/pirate.json";
 
-function getTranslationUrl(text){
-    return serverUrl +"?text=" +text;
-}
+const getTranslationUrl=text=> `${serverUrl}?text=${text}`;
 
-function errorHandler(error){
-    console.log("error occured", error)
-}
+const errorHandler=error=> console.log("error occured", error);
 
-function fetchData(){
-    var userInput= txtInput.value;
+const fetchData= _=>{
+    let userInput= txtInput.value;
 fetch(getTranslationUrl(userInput)).then(response=> response.json()).then(json=>outputBox.innerText = json.contents.translated).catch(errorHandler);
-}
+};
 
 button.addEventListener("click", fetchData);
